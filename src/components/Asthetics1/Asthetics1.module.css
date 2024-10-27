@@ -1,0 +1,10 @@
+@import "../../vars.css";
+
+.container{
+    display: flex;           /* Use flexbox to align items horizontally */
+    justify-content: center; /* Center the items horizontally */
+    align-items: center;     /* Vertically align the items */
+    gap: 20px;               /* Space between the images */
+    padding: 20px;  
+}
+

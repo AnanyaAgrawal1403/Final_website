@@ -1,0 +1,24 @@
+@import "../../vars.css";
+
+.container{
+width: 1440px;
+height: 350px;
+flex-shrink: 0;
+background: #232323;
+}
+
+
+.inner{
+    padding: 35px 0px 0px 250px;
+width: 1135px;
+color: #F7F7F7;
+text-align: center;
+font-family: Satoshi;
+font-size: 25px;
+font-style: normal;
+font-weight: 400;
+line-height: 150%; /* 37.5px */
+}
+@media screen and (max-width: 830px) {
+
+  }

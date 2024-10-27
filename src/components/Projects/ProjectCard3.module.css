@@ -1,0 +1,84 @@
+@import "../../vars.css";
+
+.container {
+  display: flex;
+  align-items: flex-start; /* Vertically aligns image and content */
+  justify-content: flex-start; /* Align content to the left */
+  gap: 10px; /* Set the gap to 0 to remove space between image and content */
+  width: 100%;
+  padding: 10px;
+  flex-direction: row-reverse; 
+}
+.image{
+    width: 550px;
+    height: 300px;
+    flex-shrink: 0;
+    order: 2;
+}
+.picture{
+ /* Adjust as necessary */
+    height: auto;
+    pointer-events: auto;
+}
+.picture:hover{
+    cursor: pointer;
+    border: solid black;
+    pointer-events: auto;
+}
+ 
+.content{
+    flex: 1; /* Ensures content takes the remaining width */
+    text-align: left; /* Align text to the left */
+    margin-left: 10px;
+    padding-left: 20px;
+    padding-top: 0px;
+    order: 1;
+} 
+ 
+
+.upper{
+    padding-bottom: 60px;
+    padding-top: 0px;
+}
+
+.lineOne{
+    display: flex;
+    gap: 300px;
+    padding-bottom: 10px;
+}
+.title{
+color: #000;
+font-family: Satoshi;
+font-size: 40px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.dates{
+color: #000;
+font-family: Satoshi;
+font-size: 25px;
+font-style: normal;
+font-weight: 300;
+line-height: normal;
+}
+.duration{
+ color: #000;
+font-family: Satoshi;
+font-size: 25px;
+font-style: italic;
+font-weight: 300;
+line-height: normal;
+}
+.description{
+ color: #353535;
+font-family: Satoshi;
+font-size: 25px;
+font-style: italic;
+font-weight: 300;
+line-height: 150%; /* 37.5px */
+}
+
+
+
+

@@ -1,26 +1,11 @@
 [
   {
-    "title": "Project A",
-    "imageSrc": "projects/project.png",
-    "description": "This is a project made to learn the latest languages by building an app.",
-    "skills": ["React", "Express", "Node"],
-    "demo": "https://www.example.com",
-    "source": "https://www.github.com"
-  },
-  {
-    "title": "Project B",
-    "imageSrc": "projects/project.png",
-    "description": "This is a project made to learn the latest languages by building an app.",
-    "skills": ["React", "Express", "Node", "Sass"],
-    "demo": "https://www.example.com",
-    "source": "https://www.github.com"
-  },
-  {
-    "title": "Project C",
-    "imageSrc": "projects/project.png",
-    "description": "This is a project made to learn the latest languages by building an app.",
-    "skills": ["React", "Express", "Node"],
-    "demo": "https://www.example.com",
-    "source": "https://www.github.com"
+    "title": "Neona",
+    "imageSrc": "projects/Neona.png",
+    "description": "// comprehensive study of the experiences of nurses working in the Neonatal Intensive Care Unit (NICU) and the design of a digital device to streamline workflow in critical situations",
+    "date" : "2023",
+    "duration" : "Duration : 6 months",
+    "link" : "https://www.youtube.com/watch?v=jwoVQyu8jGQ"
   }
+  
 ]

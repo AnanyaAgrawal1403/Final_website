@@ -7,25 +7,31 @@ export const Contact = () => {
   return (
     <footer id="contact" className={styles.container}>
       <div className={styles.text}>
-        <h2>Contact</h2>
-        <p>Feel free to reach out!</p>
+        <div className = {styles.title}>DHAIROBA</div>
+        <p className={styles.Scroll}> Thanks for Scrolling!</p>
       </div>
       <ul className={styles.links}>
-        <li className={styles.link}>
-          <img src={getImageUrl("contact/emailIcon.png")} alt="Email icon" />
-          <a href="mailto:myemail@email.com">myemail@email.com</a>
-        </li>
-        <li className={styles.link}>
-          <img
-            src={getImageUrl("contact/linkedinIcon.png")}
+
+      <li className={styles.linkedin}>
+        <img
+            src={getImageUrl("contact/linkedin.png")}
             alt="LinkedIn icon"
           />
-          <a href="https://www.linkedin.com/myname">linkedin.com/myname</a>
+          <a href="https://www.linkedin.com/in/dhairyasheel-pawar-a544721b0?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app">LinkedIn</a>
         </li>
-        <li className={styles.link}>
-          <img src={getImageUrl("contact/githubIcon.png")} alt="Github icon" />
-          <a href="https://www.github.com/myname">github.com/myname</a>
+
+
+        <li className={styles.insta}>
+          <img src={getImageUrl("contact/instagram.png")} alt="Github icon" />
+          <a href="https://www.instagram.com/dhairoba/profilecard/?igsh=ZTYzcnNtZGtkb2l0">Instagram</a>
         </li>
+
+        <li className={styles.email}>
+          <img src={getImageUrl("contact/email.png")} alt="Email icon" />
+          <a href="dhawal.s.pawar@gmail.com">Gmail</a>
+        </li>
+        
+        
       </ul>
     </footer>
   );

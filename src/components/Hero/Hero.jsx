@@ -7,16 +7,11 @@ export const Hero = () => {
   return (
     <section className={styles.container}>
       <div className={styles.content}>
-        <h1 className={styles.title}>Hi, I'm Ananya</h1>
-        <p className={styles.description}>
-          I'm a final year student at IIT Bombay with a constant urge to learn and grow!
-        </p>
-        <a href="mailto:ananya.agrawal1403@gmail.com" className={styles.contactBtn}>
-          Contact Me
-        </a>
+        <h1 className={styles.title}>Hello,<br></br> I am Dhairyasheel</h1>
+        
       </div>
       <img
-        src={getImageUrl("hero/heroImage.png")}
+        src={getImageUrl("hero/dhairya.png")}
         alt="Hero image of me"
         className={styles.heroImg}
       />
