@@ -3,20 +3,22 @@ import React from "react";
 import styles from "./ProjectCard2.module.css";
 import { getImageUrl } from "../../utils";
 
+
 export const ProjectCard2 = ({
   project: {title, imageSrc, description,date,duration,link},
 }) => {
-  console.log('Dev>>> link', title, imageSrc, description, date, duration, link);
   return (
     <div className={styles.container}>
       <div className = {styles.picture}> 
         <a href = {link} target="_blank" rel="noopener noreferrer">
           <img
             src={getImageUrl(imageSrc)}
+           
             alt={`Image of ${title}`}
             className={styles.image}
           />
         </a>
+       
       </div>
       <div className = {styles.content}>
           <div className = {styles.upper}>

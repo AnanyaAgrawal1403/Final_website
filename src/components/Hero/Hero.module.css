@@ -1,4 +1,5 @@
 @import "../../vars.css";
+@import url('https://cdn.fontsprovider.com/path/to/satoshi.css');
 
 .container {
   position: relative;
@@ -10,7 +11,8 @@
   margin-left: 5%;
   margin-right: 0%;
   background: #FFF;
-  gap: 250px;
+  gap: 100px;
+  overflow: hidden;
 }
 
 .content {
@@ -22,7 +24,7 @@
 
 .title {
   color: #000;
-font-family: Satoshi;
+font-family: Satoshi , sans-serif;
 font-size: 74px;
 font-style: normal;
 font-weight: 300;
@@ -46,6 +48,7 @@ line-height: normal;
 height: 572px;
 flex-shrink: 0;
   z-index: 1;
+  
 }
 
 

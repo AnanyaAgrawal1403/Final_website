@@ -7,7 +7,11 @@ export const Contact = () => {
   return (
     <footer id="contact" className={styles.container}>
       <div className={styles.text}>
-        <div className = {styles.title}>DHAIROBA</div>
+      <img
+        src={getImageUrl("nav/dhairoba.png")}
+        alt="brand"
+        className={styles.brandimg}
+      />
         <p className={styles.Scroll}> Thanks for Scrolling!</p>
       </div>
       <ul className={styles.links}>

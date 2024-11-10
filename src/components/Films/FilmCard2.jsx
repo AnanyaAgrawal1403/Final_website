@@ -16,6 +16,9 @@ export const FilmCard2 = ({
         alt={`Image of ${title}`}
         className={styles.image}
       />
+              <div className="overlay">
+                <div className="play-button"></div>
+            </div>
       </a>
         </div>
 

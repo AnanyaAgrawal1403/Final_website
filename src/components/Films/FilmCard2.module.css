@@ -4,28 +4,34 @@
   display: flex;
   align-items: flex-start; /* Vertically aligns image and content */
   justify-content: flex-start; /* Align content to the left */
-  gap: 70px; /* Set the gap to 0 to remove space between image and content */
+  gap: 50px; /* Set the gap to 0 to remove space between image and content */
   width: 100%;
   padding-left: 60px;
   padding-right: 60px;
   padding-bottom: 10px;
 }
 .image{
-    width: 600px;
+    width: 660px;
     height: 300px;
     padding-right: 20px;
     padding-left: 30px;
     flex-shrink: 0;
+    display: block;
+    transition: border-color 0.3s ease;
+    
+    
   
 }
 .picture{
- /* Adjust as necessary */
-    height: auto;
+    position: relative;
+    display: inline-block;
 }
-.picture:hover{
+.image:hover{
     cursor : pointer;
     border:  solid white;
 }
+
+
  
 .content{
     flex: 1; /* Ensures content takes the remaining width */

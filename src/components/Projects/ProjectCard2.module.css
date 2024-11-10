@@ -7,22 +7,31 @@
   gap: 10px; /* Set the gap to 0 to remove space between image and content */
   width: 100%;
   padding: 10px;
+  overflow: hidden;
 }
 .image{
-    width: 550px;
-    height: 300px;
+    width: 625px;
+    height: 350px;
     flex-shrink: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    display: block;
 }
 .picture{
  /* Adjust as necessary */
     height: auto;
     pointer-events: auto;
+    border: 1px solid transparent; /* Add an invisible border initially */
+    transition: border-color 0.3s ease;
+    box-sizing: border-box;
 }
-.picture:hover{
+.image:hover{
     cursor: pointer;
     border: solid black;
     pointer-events: auto;
 }
+
  
 .content{
     flex: 1; /* Ensures content takes the remaining width */
@@ -40,7 +49,7 @@
 
 .lineOne{
     display: flex;
-    gap: 300px;
+    gap: 400px;
     padding-bottom: 10px;
 }
 .title{
@@ -74,6 +83,7 @@ font-size: 25px;
 font-style: italic;
 font-weight: 300;
 line-height: 150%; /* 37.5px */
+width: 500px;
 }
 
 
