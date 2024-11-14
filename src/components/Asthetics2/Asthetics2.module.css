@@ -38,3 +38,20 @@ flex-shrink: 0;
 height: 469px;
 flex-shrink: 0;
 }
+
+@media (max-width: 480px) {
+    .container {
+        gap: 15px;
+        padding: 10px;
+    }
+
+    .twoimages {
+        padding: 5px;
+        gap: 10px;
+    }
+
+    .sunflower, .matka, .mandir {
+        width: 100%; /* Full width for extra small screens */
+        height: auto;
+    }
+}

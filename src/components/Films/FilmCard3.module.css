@@ -1,4 +1,5 @@
 @import "../../vars.css";
+@import url('https://cdn.fontsprovider.com/path/to/satoshi.css');
 
 .container {
   display: flex;
@@ -55,7 +56,7 @@
 }
 .title{
     color: #FFF;
-    font-family: Satoshi;
+    font-family: Satoshi , sans-serif;
     font-size: 40px;
     font-style: normal;
     font-weight: 400;
@@ -63,7 +64,7 @@
 }
 .dates{
     color: #FFF;
-    font-family: Satoshi;
+    font-family: Satoshi , sans-serif;
     font-size: 25px;
     font-style: normal;
     font-weight: 300;
@@ -71,7 +72,7 @@
 }
 .duration{
     color: #FFF;
-    font-family: Satoshi;
+    font-family: Satoshi , sans-serif;
     font-size: 25px;
     font-style: italic;
     font-weight: 300;
@@ -79,13 +80,66 @@
 }
 .description{
     color: #F7F7F7;
-    font-family: Satoshi;
+    font-family: Satoshi , sans-serif;
     font-size: 25px;
     font-style: italic;
     font-weight: 300;
     line-height: 150%; /* 37.5px */
     width: 575px;
 }
+
+
+@media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      align-items: center;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  
+    .image {
+      width: 100%;
+      height: auto;
+      padding-left: 0;
+      padding-right: 0;
+    }
+  
+    .content {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  
+    .lineOne {
+      gap: 20px;
+      flex-direction: column;
+    }
+  
+    .title {
+      font-size: 30px;
+    }
+  
+    .description {
+      width: 100%;
+      font-size: 20px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .title {
+      font-size: 24px;
+    }
+  
+    .dates,
+    .duration,
+    .description {
+      font-size: 18px;
+    }
+  
+    .content {
+      padding-left: 10px;
+      margin-left: 0;
+    }
+  }
 
 
 

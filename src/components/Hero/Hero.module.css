@@ -32,6 +32,52 @@ line-height: normal;
 white-space: nowrap;
 }
 
+
+@media screen and (max-width: 830px) {
+  .container {
+    flex-direction: column-reverse;
+  }
+
+  .content {
+    align-items: center;
+  }
+}
+
+/* Additional Responsive Styles */
+@media (max-width: 768px) {
+  .container {
+    gap: 50px; /* Reduce gap for smaller screens */
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+  }
+
+  .title, .description {
+    font-size: 50px; /* Reduce font size for tablet screens */
+    text-align: center; /* Center-align text on smaller screens */
+    white-space: normal; /* Allow text to wrap */
+  }
+
+  .heroImg {
+    width: 100%; /* Full width for the image */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    margin-top: 20px;
+  }
+
+  .title, .description {
+    font-size: 32px; /* Smaller font size for mobile screens */
+  }
+
+  .heroImg {
+    max-width: 200px;
+  }
+}
+
 .description {
   color: #000;
 font-family: Satoshi;

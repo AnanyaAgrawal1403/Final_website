@@ -1,4 +1,5 @@
 @import "../../vars.css";
+@import url('https://cdn.fontsprovider.com/path/to/satoshi.css');
 .container{
   display: flex;
   flex-direction: column; /* Align elements in a column */
@@ -13,7 +14,7 @@
 }
 .Scroll{
   color: #000;
-font-family: Satoshi;
+font-family: Satoshi , sans-serif;
 font-size: 25px;
 font-style: normal;
 font-weight: 400;
@@ -58,11 +59,90 @@ li img {
 /* Text styling for the link text */
 li a {
   color: #000;
-  font-family: Satoshi;
+  font-family: Satoshi , sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
   text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 20px;
+  }
+
+  .Scroll {
+    font-size: 20px; /* Reduce font size for smaller screens */
+  }
+
+  .links {
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 40px;
+  }
+
+  ul {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  li {
+    margin: 0 10px; /* Adjust margins for smaller screens */
+    margin-right: 0;
+  }
+
+  li img {
+    width: 30px; /* Reduce image size */
+    height: 30px;
+  }
+
+  li a {
+    font-size: 18px; /* Adjust font size for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 10px;
+  }
+
+  .Scroll {
+    font-size: 18px;
+  }
+
+  .links {
+    padding-top: 20px;
+  }
+
+  li {
+    margin: 0 5px;
+  }
+
+  li img {
+    width: 25px;
+    height: 25px;
+  }
+
+  li a {
+    font-size: 16px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .inner {
+    padding-top: 50px; /* Reduces padding on smaller screens */
+    padding-bottom: 50px;
+    font-size: 18px; /* Slightly smaller font size */
+  }
+}
+
+@media (max-width: 480px) {
+  .inner {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 16px; /* Further reduce font size for mobile screens */
+  }
 }
 

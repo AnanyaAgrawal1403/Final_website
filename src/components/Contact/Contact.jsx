@@ -21,18 +21,18 @@ export const Contact = () => {
             src={getImageUrl("contact/linkedin.png")}
             alt="LinkedIn icon"
           />
-          <a href="https://www.linkedin.com/in/dhairyasheel-pawar-a544721b0?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app">LinkedIn</a>
+          <a href="https://www.linkedin.com/in/dhairyasheel-pawar-a544721b0?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank">LinkedIn</a>
         </li>
 
 
         <li className={styles.insta}>
           <img src={getImageUrl("contact/instagram.png")} alt="Github icon" />
-          <a href="https://www.instagram.com/dhairoba/profilecard/?igsh=ZTYzcnNtZGtkb2l0">Instagram</a>
+          <a href="https://www.instagram.com/dhairoba/profilecard/?igsh=ZTYzcnNtZGtkb2l0" target="blank">Instagram</a>
         </li>
 
         <li className={styles.email}>
           <img src={getImageUrl("contact/email.png")} alt="Email icon" />
-          <a href="dhawal.s.pawar@gmail.com">Gmail</a>
+          <a href="mailto:dhawal.s.pawar@gmail.com" target="blank">Gmail</a>
         </li>
         
         

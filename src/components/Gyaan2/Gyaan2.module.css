@@ -1,3 +1,4 @@
+@import url('https://cdn.fontsprovider.com/path/to/satoshi.css');
 .container{
     width: 1440px;
     background: #FFF;
@@ -9,7 +10,7 @@
     width: 959px;
   color: #000;
   text-align: center;
-  font-family: Satoshi;
+  font-family: Satoshi , sans-serif;
   font-size: 20px;
   font-style: italic;
   font-weight: 300;
@@ -17,3 +18,27 @@
   letter-spacing: 0.4px;
   margin: 0 auto;
   }
+
+
+  @media (max-width: 768px) {
+    .container {
+        width: 100%; /* Full width for tablets */
+        padding: 10px 0;
+    }
+
+    .inner {
+        width: 90%; /* Reduce width for tablets */
+        font-size: 18px; /* Slightly smaller font size */
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 5px 0;
+    }
+
+    .inner {
+        width: 100%; /* Full width for mobile */
+        font-size: 16px; /* Smaller font size for mobile */
+    }
+}

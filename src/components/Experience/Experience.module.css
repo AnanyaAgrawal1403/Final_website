@@ -21,3 +21,26 @@ padding-top: 0px;
   max-width: 100%;
   height: auto;
 }
+
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 20px; /* Adjust font size for tablet screens */
+    padding: 20px; /* Reduce padding */
+  }
+
+  .container {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 18px; /* Further reduce font size for mobile screens */
+    padding: 15px;
+  }
+
+  .container {
+    padding: 10px;
+  }
+}

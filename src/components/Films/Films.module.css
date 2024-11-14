@@ -1,4 +1,5 @@
 @import "../../vars.css";
+@import url('https://cdn.fontsprovider.com/path/to/satoshi.css');
 
 .container {
   width: 1440px;
@@ -18,7 +19,7 @@ flex-shrink: 0;
 .title {
 padding-left: 70px;
 color: #FFF;
-font-family: Satoshi;
+font-family: Satoshi , sans-serif;
 font-size: 74px;
 font-style: italic;
 font-weight: 400;
@@ -36,6 +37,34 @@ padding-top: 40px;
   gap: 50px;
   width: 100%;
   color: #FFF;
+}
+
+
+@media (max-width: 768px) {
+  .container {
+    width: 100%; /* Expand to full width for smaller screens */
+    height: auto; /* Allow height to adjust automatically */
+  }
+
+  .title {
+    padding-left: 20px;
+    font-size: 48px; /* Adjust title font size for tablets */
+  }
+
+  .projects {
+    gap: 30px; /* Reduce gap between project items */
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    padding-left: 10px;
+    font-size: 36px; /* Smaller font size for mobile screens */
+  }
+
+  .projects {
+    gap: 20px; /* Further reduce gap for mobile */
+  }
 }
 
 
