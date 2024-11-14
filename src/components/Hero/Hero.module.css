@@ -60,7 +60,7 @@ white-space: nowrap;
   .heroImg {
     width: 100%; /* Full width for the image */
     height: auto; /* Maintain aspect ratio */
-    max-width: 300px;
+    /* max-width: 300px; */
   }
 }
 
@@ -74,7 +74,9 @@ white-space: nowrap;
   }
 
   .heroImg {
-    max-width: 200px;
+    /* max-width: 200px; */
+    width: 10vw; /* Full width for the image */
+
   }
 }
 

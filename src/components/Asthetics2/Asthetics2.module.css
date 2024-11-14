@@ -34,7 +34,7 @@ flex-shrink: 0;
     flex-shrink: 0; 
 }
 
-.mandir{
+.mandir ,.sky{
     width: 400x;
 height: 469px;
 flex-shrink: 0;

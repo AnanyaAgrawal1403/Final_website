@@ -1,11 +1,14 @@
 import React, { useState } from "react";
 import styles from "./Navbar.module.css";
-
 import { getImageUrl } from "../../utils";
 
 export const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
- 
+
+  const toggleMenu = () => {
+    setMenuOpen((prevState) => !prevState);
+  };
+
   return (
     <nav className={styles.navbar}>
       <img
@@ -13,13 +16,25 @@ export const Navbar = () => {
         alt="brand"
         className={styles.brandimg}
       />
-      
-      
-      <div className={styles.menu}>
-        
+
+      {/* Hamburger Icon */}
+      <div className={styles.menuBtn} onClick={toggleMenu}>
+        {menuOpen ? (
+          <span className={styles.closeIcon}>&times;</span> /* Close Icon */
+        ) : (
+          <>
+            <span className={styles.hamburger}></span>
+            <span className={styles.hamburger}></span>
+            <span className={styles.hamburger}></span>
+          </>
+        )}
+      </div>
+
+      {/* Menu Items */}
+      <div className={`${styles.menu} ${menuOpen ? styles.menuOpen : ""}`}>
         <ul
-          className={`${styles.menuItems} ${menuOpen && styles.menuOpen}`}
-          onClick={() => setMenuOpen(false)}
+          className={styles.menuItems}
+          onClick={() => setMenuOpen(false)} // Close menu on click
         >
           <li>
             <a href="#about">About</a>
@@ -30,7 +45,6 @@ export const Navbar = () => {
           <li>
             <a href="#films">Films</a>
           </li>
-          
           <li>
             <a href="#contact">Contact</a>
           </li>

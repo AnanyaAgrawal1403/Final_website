@@ -6,8 +6,15 @@
     align-items: center;     /* Vertically align the items */
     gap: 20px;               /* Space between the images */
     padding: 20px;  
+    margin: 1vw;
 }
+.tamdi,.kaajve,.wtf{
+    width: 475px; /* Set the desired width */
+  height: 400px; /* Set the desired height */
+  object-fit: cover; /* Ensures the images fill the set dimensions */
+  flex-shrink: 0;
 
+}
 @media (max-width: 768px) {
     .container {
         flex-direction: column; /* Stack items vertically on smaller screens */
