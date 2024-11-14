@@ -50,7 +50,7 @@
 
 .lineOne{
     display: flex;
-    gap: 400px;
+    gap: 300px;
     padding-bottom: 10px;
 }
 .title{
@@ -60,6 +60,7 @@ font-size: 40px;
 font-style: light;
 font-weight: 400;
 line-height: normal;
+white-space: nowrap;
 }
 .dates{
 color: #000;
